@@ -14,7 +14,7 @@ Avant de démarrer le projet, assurez-vous d'avoir les éléments suivants insta
 1. Clonez le repository sur votre machine locale :
 
     ```bash
-    git clone https://github.com/votre-utilisateur/calculatrice-laravel.git
+    git clone https://github.com/mehdifox/laravel-calculator.git
     ```
 
 2. Accédez au dossier du projet :
