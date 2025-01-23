@@ -79,10 +79,3 @@ Les entrées sont validées via des règles personnalisées pour garantir qu'ell
 - **Formulaire** : Le formulaire et l'affichage des résultats sont gérés dans `resources/views/calculator/index.blade.php`.
 - **Validation** : Les règles de validation de la requête sont définies dans `app/Http/Requests/CalculateRequest.php`.
 
-## Tests
-
-Les tests peuvent être ajoutés pour valider les fonctionnalités de la calculatrice. Laravel fournit des outils pour effectuer des tests unitaires et des tests d'intégration.
-
-## Contribuer
-
-Si vous souhaitez contribuer à ce projet, vous pouvez proposer des améliorations ou signaler des bugs via des pull requests ou des issues.
