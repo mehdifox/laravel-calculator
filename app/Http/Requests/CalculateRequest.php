@@ -15,11 +15,11 @@ class CalculateRequest extends FormRequest
      */
     public function authorize()
     {
-        return true; // Aucune restriction d'accès ici
+        return true;
     }
 
     /**
-     * Récupère les règles de validation pour la requête.
+     * Récupère les règles de validation.
      *
      * @return array
      */
@@ -33,7 +33,7 @@ class CalculateRequest extends FormRequest
     }
 
     /**
-     * Récupère les messages d'erreur personnalisés pour la validation.
+     * Récupère les messages d'erreur personnalisés.
      *
      * @return array
      */

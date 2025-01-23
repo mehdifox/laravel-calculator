@@ -1,5 +1,3 @@
-<!-- resources/views/calculator/index.blade.php -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -68,18 +66,18 @@
         @csrf
 
         <div class="form-group">
+            <label for="number1">Nombre 1:</label>
             @error('number1')
                 <div class="error">{{ $message }}</div>
             @enderror
-            <label for="number1">Nombre 1:</label>
             <input type="text" name="number1" value="{{ old('number1') }}" required inputmode="decimal" pattern="^\d+(\,|\.)?\d*$" title="Veuillez entrer un nombre valide (ex: 10.5 ou 10,5)">
         </div>
 
         <div class="form-group">
+            <label for="operation">Opération:</label>
             @error('operation')
                 <div class="error">{{ $message }}</div>
             @enderror
-            <label for="operation">Opération:</label>
             <select name="operation" required>
                 <option value="+" {{ old('operation') == '+' ? 'selected' : '' }}>+</option>
                 <option value="-" {{ old('operation') == '-' ? 'selected' : '' }}>-</option>
@@ -89,10 +87,10 @@
         </div>
 
         <div class="form-group">
+            <label for="number2">Nombre 2:</label>
             @error('number2')
                 <div class="error">{{ $message }}</div>
             @enderror
-            <label for="number2">Nombre 2:</label>
             <input type="text" name="number2" value="{{ old('number2') }}" required inputmode="decimal" pattern="^\d+(\,|\.)?\d*$" title="Veuillez entrer un nombre valide (ex: 10.5 ou 10,5)">
         </div>
 

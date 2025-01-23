@@ -16,13 +16,13 @@ class CalculatorController extends Controller
 
     public function calculate(CalculateRequest $request)
     {
-        // Validation déjà faite par CalculateRequest
+        // Validation déjà faite par CalculateRequest.
 
-        // Remplacer la virgule par un point pour les calculs
+        // Remplacer la virgule par un point pour les calculs, si l'utilisateur saisit une virgule.
         $number1 = str_replace(',', '.', $request->number1);
         $number2 = str_replace(',', '.', $request->number2);
 
-        // Utilisation d'un modèle pour effectuer les calculs
+        // Utiliser le modèle pour effectuer les calculs.
         $calculation = new Calculation($number1, $number2, $request->operation);
         $result = $calculation->calculate();
 
